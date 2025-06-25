@@ -199,3 +199,9 @@ footer {
   display: flex;
   align-items: center;
 }
+
+.hero-logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 20px;
+}
