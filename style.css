@@ -1,3 +1,4 @@
+/* Reset & base styles */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -15,28 +16,18 @@ body {
 /* Header */
 header {
   background-color: #111827;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-img {
-  height: 50px;
-  width: auto;
+  min-height: 60px;
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   background: linear-gradient(to right, #00f5d4, #8338ec);
   -webkit-background-clip: text;
@@ -46,7 +37,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   margin: 0;
   padding: 0;
 }
@@ -55,6 +46,7 @@ nav a {
   color: #d4d4d8;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -90,15 +82,17 @@ nav a:hover {
   border-radius: 5px;
   margin-top: 20px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #38bdf8;
 }
 
-/* Sections */
+/* Section titles */
 section h3 {
   font-size: 28px;
+  margin-bottom: 20px;
   background: linear-gradient(to right, #00f5d4, #8338ec);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,6 +108,16 @@ section h3 {
 
 .services-list li {
   margin: 10px 0;
+}
+
+/* Contact section */
+#contact a {
+  color: #00f5d4;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #38bdf8;
 }
 
 /* Footer */
