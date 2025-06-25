@@ -188,3 +188,14 @@ footer {
 .read-more:hover {
   color: #38bdf8;
 }
+
+.logo-image img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.logo-image {
+  display: flex;
+  align-items: center;
+}
