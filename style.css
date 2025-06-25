@@ -58,7 +58,7 @@ nav a:hover {
 #hero {
   text-align: center;
   padding: 100px 20px;
-  background: radial-gradient(circle at center, #0b0c1f 40%, #111827);
+  background-color: #111827;
 }
 
 #hero h2 {
