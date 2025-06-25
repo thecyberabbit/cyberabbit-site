@@ -137,8 +137,8 @@ footer {
 }
 
 .blog-card {
-  background-color: #111827;
-  border: 1px solid #1e293b;
+  background-color: #1e293b;
+  border: 1px solid #334155;
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.2s ease, border 0.3s ease;
@@ -152,13 +152,16 @@ footer {
 .blog-card h4 {
   margin-top: 0;
   font-size: 20px;
-  background: linear-gradient(to right, #00f5d4, #8338ec);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #e0f7ff;
 }
 
-.blog-card a {
+.blog-card h4 a {
+  color: #e0f7ff;
   text-decoration: none;
+}
+
+.blog-card h4 a:hover {
+  color: #00f5d4;
 }
 
 .blog-meta {
@@ -177,6 +180,7 @@ footer {
   color: #00f5d4;
   font-weight: bold;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .read-more:hover {
