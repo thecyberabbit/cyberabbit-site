@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Warehouse Ransom</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Byte File</p>
+        <h1>New ransom crew posts data warehouse leaks</h1>
+        <p class="post-meta">Feb 23, 2026 • 5 min read</p>
+        <p class="hero-sub">Instead of encrypting disks, this group dumps curated warehouse tables and adds a challenge: pay or the data goes to journalists.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>The attackers breached multiple ETL platforms, exfiltrated the staging tables, and published them without encryption. They include customer PII, credentials, and some business intelligence—enough to embarrass the victim without triggering immediate regulation.</p>
+    <p>Teams are forced to triage the leak, rotate exposed credentials, and run tabletop exercises for this extortion variant. There’s no ransom link in the dump yet, but the group keeps refreshing the dataset with new columns.</p>
+    <p>If you host sensitive data in warehouses, segment the compute nodes and enforce metadata access controls. Run queries for unusual COPY commands, and treat any unexpected ingestion as a possible exfil indicator.</p>
+    <p><strong>Takeaway:</strong> Data is the new ransom. Harden your warehouses the same way you secure your networks.</p>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

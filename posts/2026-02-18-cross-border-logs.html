@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cross-Border Logging</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Byte File</p>
+        <h1>Regulators enforce cross-border logging limits</h1>
+        <p class="post-meta">Feb 18, 2026 • 2 min read</p>
+        <p class="hero-sub">New guidance forces teams to delete logs flowing between jurisdictions within 72 hours—or pay fines.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>Data residency rules now treat logging pipelines as data exports. Teams must either keep logs local or explicitly delete them shortly after ingestion if they pass through different legal borders.</p>
+    <p>If your observability stack spans continents, automate the filtering and retention policies. A mirror metric in the EU is now considered an export unless the data is anonymized.</p>
+    <p>Audit your archived logging buckets for cross-region replication. If you cannot delete immediately, document the legal exception within your compliance runbooks.</p>
+    <p><strong>Takeaway:</strong> Log shipping is not neutral. Treat it as a regulated stream and build the retention automation now.</p>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
