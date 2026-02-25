@@ -3,37 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cyberabbit</title>
+  <title>Cyberabbit — Byte-sized Cybersecurity News</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container header-flex">
-      <h1 class="logo-text">CYBERABBIT</h1>
+      <div class="logo-stack">
+        <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html">Bytes</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section id="hero">
-  <div class="container">
-    <img src="logo.png" alt="Cyberabbit Logo" class="hero-logo" />
-    <h2>Cybersecurity, Simplified</h2>
-    <p>Exploring the tech world — one byte at a time 🥕</p>
-    <a href="blog.html" class="cta-button">Go to Blog</a>
-  </div>
-</section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekly Byte</p>
+          <h1>Smart, sarcastic takes on the cyber news you can actually act on.</h1>
+          <p>Every six hours we scan the threat-sphere, distill the signal, and deliver a new byte-sized write-up. No fluff. No buzzword salad. Just breaches, AI stunts, vulnerabilities, and weird tricks that actually matter.</p>
+          <p class="hero-sub">The brand is carrot sharp, the tone is professional with a wink, and the insights land with a crunchy bite.</p>
+          <div class="hero-actions">
+            <a href="blog.html" class="cta">Read the latest bytes</a>
+            <a href="#newsletter" class="secondary">Get the Byte Digest</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <p class="panel-label">Breaking Byte</p>
+            <h3><a href="posts/mcpa2a-blog-post.html">AI Agents: Time to Start Talking!</a></h3>
+            <p class="panel-copy">Protocols like MCP and A2A are finally forcing AI agents to share context. The next breach you hear about will probably trace back to miscommunicating bots, so this actually matters.</p>
+            <span class="panel-tag">Last updated: July 2, 2025</span>
+          </div>
+          <div class="panel-card muted">
+            <p class="panel-label">Meta signal</p>
+            <p class="panel-copy">AI compliance policy updates keep turning CISO checklists into chaos. We watch the tweaks so you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="stats-lane container">
+      <div class="stat-card">
+        <p class="stat-label">Bytes Delivered</p>
+        <h4>186</h4>
+        <p>Fresh takes across breaches, vulnerabilities, and AI security.</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Rabbit Tracks</p>
+        <h4>+32</h4>
+        <p>New sources this week, including AI compliance newsletters and breach watchers.</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Average Read</p>
+        <h4>4.2 min</h4>
+        <p>Short, crisp, and built for defenders on the go.</p>
+      </div>
+    </section>
 
-  
+    <section class="featured-byte container">
+      <div class="section-header">
+        <h3>Featured Byte</h3>
+        <p>Thoughtful coverage with a punch.</p>
+      </div>
+      <div class="featured-grid">
+        <article class="featured-card">
+          <p class="eyebrow">Latest</p>
+          <h4>AI Agents: Time to Start Talking!</h4>
+          <p>AI agents are going to break everything if they keep whispering to themselves. MCP and A2A are the glue. This byte walks through why you should care and what to watch.</p>
+          <footer>
+            <span>July 2, 2025</span>
+            <a href="posts/mcpa2a-blog-post.html">Read byte →</a>
+          </footer>
+        </article>
+        <article class="featured-card">
+          <p class="eyebrow">Archive pick</p>
+          <h4>The Truth About VPNs: You're Not As Safe As You Think</h4>
+          <p>VPNs are a trust exercise with holes. We tear apart the myths and show the actual controls that keep data safe after the tunnel drops.</p>
+          <footer>
+            <span>June 24, 2025</span>
+            <a href="posts/sample-post-2.html">Read byte →</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="trend-feed container">
+      <div class="section-header">
+        <h3>Trending Carrots</h3>
+        <p>Signal from the noise.</p>
+      </div>
+      <div class="trend-grid">
+        <article class="trend-card">
+          <span class="trend-eyebrow">Breaches</span>
+          <h4>The supply chain hiccup everyone is pretending isn’t happening.</h4>
+          <p>Newer open-source libraries keep taking the blame, but the real story is patch cadence and internal process breakdowns that let attackers slip through.</p>
+        </article>
+        <article class="trend-card">
+          <span class="trend-eyebrow">AI Security</span>
+          <h4>Auto fuzzing is now running on your live production APIs.</h4>
+          <p>Generative fuzzers are churning out zero-days faster than defenders can patch. Make those bug bounties a habit.</p>
+        </article>
+        <article class="trend-card">
+          <span class="trend-eyebrow">Policy</span>
+          <h4>Legislation is finally catching up to cross-border data pours.</h4>
+          <p>New regs mean you cannot assume compliance just because your data lives in a U.S. data center—they trace jurisdictional flows now.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter-card">
+        <div>
+          <p class="eyebrow">Get the Byte Digest</p>
+          <h3>A single email, every six hours.</h3>
+          <p>Short notes, punny tone, zero fluff. If a byte lands in your inbox, you know the story behind the headline.</p>
+        </div>
+        <form class="newsletter-form" action="https://example.com/subscribe" method="post">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@cyberteam.com" required />
+          <button type="submit">Send me the byte</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Cyberabbit. All rights reserved.</p>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. Still short for 'cybernetic rabbit surveillance'.</p>
+      <div class="footer-links">
+        <a href="blog.html">Bytes</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/thecyberabbit/cyberabbit-site" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </div>
   </footer>
 </body>
