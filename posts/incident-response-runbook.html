@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incident Response Runbook</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Bytes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Response Byte</p>
+        <h1>Incident response runbook: steps in ink, action in minutes.</h1>
+        <p class="post-meta">Category: Response • 7 min read</p>
+        <p class="hero-sub">This runbook is your scripted answer. Document the stages so analysts know exactly what to do when alarms fire.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1300&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>The runbook has four acts: detect, contain, eradicate, and recover. Each act answers “What happens next?” and points to automation scripts, contacts, and approvals.</p>
+    <p>In detect, confirm the alert. Validate telemetry sources, gather context, and assign severity. Build a shared timeline of when the suspicious activity started and which assets moved.</p>
+    <p>Contain is the immediate action. Isolate the endpoint, block the C2 domains, and revoke service credentials. Fresh automation helps—if you can isolate the network interface with one CLI, you reduce blast radius.</p>
+    <p>Eradicate addresses the root cause: patch the bug, rotate keys, and remove malicious artifacts. Document the commands so the next analyst doesn’t invent a new process each time.</p>
+    <p>Recover outlines how to bring services back online, run post-mortems, and update stakeholders. Include communication templates for execs, legal, and customers.</p>
+    <p><strong>Takeaway:</strong> A good runbook is a living script. Keep the logic hand-written so that even a new analyst can follow the steps without guesswork.</p>
+  </section>
+
+  <section class="diagram clone">
+    <div class="diagram-caption">Playbook sketch: detect → contain → eradicate → recover</div>
+    <svg viewBox="0 0 420 220" role="presentation">
+      <polyline points="40,150 140,50 220,90 340,40" class="diagram-line" />
+      <circle cx="140" cy="50" r="28" class="diagram-node" />
+      <text x="125" y="55" class="diagram-text">detect</text>
+      <circle cx="220" cy="90" r="28" class="diagram-node" />
+      <text x="210" y="95" class="diagram-text">contain</text>
+      <circle cx="300" cy="60" r="28" class="diagram-node" />
+      <text x="285" y="65" class="diagram-text">eradicate</text>
+      <circle cx="360" cy="140" r="28" class="diagram-node" />
+      <text x="345" y="145" class="diagram-text">recover</text>
+    </svg>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

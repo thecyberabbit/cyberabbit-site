@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cyberabbit — Byte-sized Cybersecurity News</title>
+  <title>Cyberabbit — Byte-sized Cybersecurity Concepts</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
         <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
         <div>
           <p class="logo-subhead">Cyberabbit</p>
-          <p class="logo-motto">Briefing the defenders who can’t sit through another press release.</p>
+          <p class="logo-motto">Simplifying cyber concepts for curious humans.</p>
         </div>
       </div>
       <nav>
@@ -30,94 +30,105 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Mission byte</p>
-          <h1>Byte-sized cybersecurity news that cuts through the noise.</h1>
-          <p>We scan breaches, vulnerabilities, ai security drops, and policy flips so you can stay ahead of the next carrot-chomping attack. Every word we publish fits in a single scroll and ends with something you can actually act on.</p>
-          <p class="hero-sub">No daily newsletter, no full-page essay—just the byte you need to know before someone else hits your inbox.</p>
+          <h1>Every cyber concept explained like it’s a bedtime story—with diagrams.</h1>
+          <p>We turn architectures, products, and terms into approachable stories. Think of Cyberabbit as your glossary, your cheat-sheet, and your animated whiteboard, all in one.</p>
+          <p class="hero-sub">The writing is concise, the explanations are long enough to be meaningful, and the diagrams always feel hand-sketched.</p>
           <div class="hero-actions">
-            <a href="blog.html" class="cta">Read the freshest bytes</a>
-            <a href="#signals" class="secondary">See what feeds us</a>
+            <a href="blog.html" class="cta">Browse the bytes</a>
+            <a href="#categories" class="secondary">See the categories</a>
           </div>
         </div>
         <div class="hero-panel">
-          <div class="panel-card">
-            <p class="panel-label">Why cyberabbit?</p>
-            <h3>Signal without the fluff.</h3>
-            <p class="panel-copy">Our editorial loop checks the pulse of breaches, vulnerability disclosures, policy beats, and ai security experiments, then distills the tactical insight into one crisp paragraph.</p>
-            <span class="panel-tag">Built for ops people who hate droning updates.</span>
+          <div class="panel-card animate-glow">
+            <p class="panel-label">Concept flow</p>
+            <h3>Understand before you implement.</h3>
+            <p class="panel-copy">We break down security stacks into legacy-free layers and share exactly what teams need to do first.</p>
+            <span class="panel-tag">No sales babble. Just clarity.</span>
           </div>
           <div class="panel-card muted">
-            <p class="panel-label">How it lands</p>
-            <p class="panel-copy">Every home page byte links to the meat of the investigation, and every blog entry includes the context, the risk, and the action checklist.</p>
+            <p class="panel-label">Visual cheat</p>
+            <p class="panel-copy">Each article includes a diagram or flow that feels hand-drawn, reinforcing the story as you read.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="signal-stack container" id="signals">
+    <section class="category-section" id="categories">
       <div class="section-header">
-        <h3>Signal stack</h3>
-        <p>The feeds we vet before a byte gets published.</p>
+        <h3>Categories</h3>
+        <p>Click any card to jump straight to the spotlighted collection on Bytes.</p>
       </div>
-      <div class="stack-grid">
-        <article class="signal-card">
-          <h4>Threat Intel &amp; Breach Feeds</h4>
-          <p>From CISA KEV to open-source honeypots and the major incident reports, we mark anything trending that adds operational risk.</p>
-        </article>
-        <article class="signal-card">
-          <h4>Zero-Day Tracking</h4>
-          <p>We monitor the vendors, bug bounties, and fuzz labs that publish zero-day exploits, then highlight what teams actually need to patch.</p>
-        </article>
-        <article class="signal-card">
-          <h4>AI Security Experimentation</h4>
-          <p>Generative fuzzers, phishing automation, and training-data leaks are in scope. We spotlight the experiments that are bleeding into production.</p>
-        </article>
-        <article class="signal-card">
-          <h4>Policy, Compliance, and Legal</h4>
-          <p>Regulatory updates push new guardrails. When a policy shift raises a real deployment snag, it earns a byte.</p>
-        </article>
+      <div class="category-grid">
+        <a class="widget-card" href="blog.html#architecture">
+          <p class="category-pill">Architecture</p>
+          <h4>Architectural idea bytes</h4>
+          <p>Zero trust, SASE, and secure zones explained with flows instead of slides.</p>
+        </a>
+        <a class="widget-card" href="blog.html#access">
+          <p class="category-pill">Access</p>
+          <h4>Access control stories</h4>
+          <p>MFA, passwordless, identity lifecycle, and risk-aware gating—narrated plainly.</p>
+        </a>
+        <a class="widget-card" href="blog.html#detection">
+          <p class="category-pill">Detection</p>
+          <h4>Detection &amp; monitoring</h4>
+          <p>Endpoint layers, telemetry streams, and monitoring automation artifacts all demystified.</p>
+        </a>
+        <a class="widget-card" href="blog.html#response">
+          <p class="category-pill">Response</p>
+          <h4>Response playbooks</h4>
+          <p>Incident runbooks, supply chain trust, and recovery flows sketched out like a whiteboard.</p>
+        </a>
       </div>
     </section>
 
-    <section class="stats-lane container">
-      <div class="stat-card">
-        <p class="stat-label">Fresh Bytes</p>
-        <h4>10+</h4>
-        <p>Current posts covering breaches, zero-days, and AI security for the week.</p>
+    <section class="signal-stack" id="signals">
+      <div class="section-header">
+        <h3>How the bytes land</h3>
+        <p>We review vendor docs, RFCs, and architectural patterns before we write a single paragraph.</p>
       </div>
-      <div class="stat-card">
-        <p class="stat-label">Signal Sources</p>
-        <h4>40+</h4>
-        <p>Feeds, teams, and labs we scan before anything hits the page.</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-label">Read time</p>
-        <h4>4 min</h4>
-        <p>Most bytes stay short enough for a quick hallway-briefing during stand-up.</p>
+      <div class="stack-grid">
+        <article class="signal-card">
+          <h4>Curated research</h4>
+          <p>Privacy papers, vendor blueprints, and open standards feed the context for each explanation.</p>
+        </article>
+        <article class="signal-card">
+          <h4>Short, proven stories</h4>
+          <p>The goal is clarity. Each byte ends with a takeaway and a diagram that answers “how does it move?”</p>
+        </article>
+        <article class="signal-card">
+          <h4>Always clickable</h4>
+          <p>Every widget, card, and section links to the full article so you can dive deeper without hunting.</p>
+        </article>
+        <article class="signal-card">
+          <h4>Animated clarity</h4>
+          <p>CSS animations keep the experience modern—tactile gradients, floating cards, and soft glows keep the page alive.</p>
+        </article>
       </div>
     </section>
 
     <section class="featured-byte container">
       <div class="section-header">
-        <h3>Featured Byte</h3>
-        <p>Short, sharp, and trackable.</p>
+        <h3>Featured explainer</h3>
+        <p>The newest concept byte fresh from the sketchpad.</p>
       </div>
       <div class="featured-grid">
         <article class="featured-card">
           <p class="eyebrow">Latest</p>
-          <h4>AI Agents: Time to Start Talking!</h4>
-          <p>Protocols like MCP and A2A are finally forcing AI agents to share context. Miscommunicating bots are the next attack surface, so understanding these standards matters.</p>
+          <h4>Incident response runbook: ink it, then do it.</h4>
+          <p>Four acts, one scripted response. The latest release shows the flow from detection to recovery with actionable playbook snippets.</p>
           <footer>
-            <span>July 2, 2025</span>
-            <a href="posts/mcpa2a-blog-post.html">Read byte →</a>
+            <span>Response • 7 min</span>
+            <a href="posts/incident-response-runbook.html">Explore →</a>
           </footer>
         </article>
         <article class="featured-card">
-          <p class="eyebrow">Archive pick</p>
-          <h4>The Truth About VPNs: You're Not As Safe As You Think</h4>
-          <p>VPNs protect the tunnel but not the endpoints or the provider. We cut through the marketing and show what to stack on top of them.</p>
+          <p class="eyebrow">Quick lookup</p>
+          <h4>Zero Trust Architecture</h4>
+          <p>Policy, control, and data planes explained in plain language with a confident diagram that feels hand-drawn.</p>
           <footer>
-            <span>June 24, 2025</span>
-            <a href="posts/sample-post-2.html">Read byte →</a>
+            <span>Architecture • 8 min</span>
+            <a href="posts/zero-trust-architecture.html">Explore →</a>
           </footer>
         </article>
       </div>
@@ -125,24 +136,24 @@
 
     <section class="trend-feed container">
       <div class="section-header">
-        <h3>Trending Carrots</h3>
-        <p>Signal from the noise.</p>
+        <h3>Sticky ideas</h3>
+        <p>Little reminders you can tap for the full byte.</p>
       </div>
       <div class="trend-grid">
         <article class="trend-card">
-          <span class="trend-eyebrow">Breaches</span>
-          <h4>The supply chain hiccup everyone is pretending isn’t happening.</h4>
-          <p>Open-source libraries keep taking the blame, but the real story is uneven patch cadence and internal DevSecOps gaps that let the attackers slip through.</p>
+          <span class="trend-eyebrow">Architecture</span>
+          <h4>The SASE edge keeps security close to the worker.</h4>
+          <p>No more backhauling tunnels. The policy lives with the user’s nearest POP; the explanations show you the difference between SD-WAN and SASE.</p>
         </article>
         <article class="trend-card">
-          <span class="trend-eyebrow">AI Security</span>
-          <h4>Auto fuzzing is now running on your live production APIs.</h4>
-          <p>Generative fuzzers are churning out zero-days faster than defenders can patch. Make those bug bounties a habit.</p>
+          <span class="trend-eyebrow">Access</span>
+          <h4>Device posture weighs just as much as identity.</h4>
+          <p>Identity + device posture + risk engine = access policy. The articles show the handshake step by step.</p>
         </article>
         <article class="trend-card">
-          <span class="trend-eyebrow">Policy</span>
-          <h4>Legislation is finally catching up to cross-border data pours.</h4>
-          <p>New regs mean you cannot assume compliance just because your data lives in a U.S. data center—they trace jurisdictional flows now.</p>
+          <span class="trend-eyebrow">Detection</span>
+          <h4>Monitoring is a conversation, not a dump.</h4>
+          <p>Telemetry is the script the SOC follows. We talk about ingestion, automation, and calm dashboards.</p>
         </article>
       </div>
     </section>
@@ -150,7 +161,7 @@
 
   <footer>
     <div class="container footer-grid">
-      <p>© 2025 Cyberabbit. Still short for 'cybernetic rabbit surveillance'.</p>
+      <p>© 2025 Cyberabbit. Short for “cybernetic rabbit surveillance.”</p>
       <div class="footer-links">
         <a href="blog.html">Bytes</a>
       </div>

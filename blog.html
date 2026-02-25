@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Cyberabbit</title>
+  <title>Bytes - Cyberabbit</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -29,132 +29,164 @@
     <section class="blog-hero">
       <div class="container">
         <p class="eyebrow">Byte Log</p>
-        <h1>Short, sharp, and tuned for defenders who hate tl;dr.</h1>
-        <p>Each post is a single byte: context, action, and a quick link to the source. No filler editions, just the reporting you need right now.</p>
+        <h1>Concepts, architectures, and terminology—explained with diagrams.</h1>
+        <p>Every article combines a concise narrative, a hand-sketched diagram, and clickable logic so you can teach it to your team later.</p>
       </div>
     </section>
 
-    <section class="container article-grid">
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Latest Byte</p>
-          <h3>CI supply chain backdoor hits managed kit</h3>
-          <p class="article-meta">Feb 25, 2026 • 4 min read</p>
-          <p>Attackers slipped code into a popular CI toolchain just before release, then quietly stole signing keys. The artifact registry was poisoned for two hours before the patch.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-25-ci-supply-chain.html">Read byte →</a>
+    <section class="category-grid container">
+      <a class="widget-card" href="#architecture">
+        <p class="category-pill">Architecture</p>
+        <h4>Zero trust, SASE</h4>
+        <p>Understand how policies flow, where the controls live, and why trust is never assumed.</p>
+      </a>
+      <a class="widget-card" href="#access">
+        <p class="category-pill">Access</p>
+        <h4>Authentication deep dives</h4>
+        <p>See identity lifecycle and MFA/passwordless trade-offs with actionable diagrams.</p>
+      </a>
+      <a class="widget-card" href="#detection">
+        <p class="category-pill">Detection</p>
+        <h4>Telemetry explained</h4>
+        <p>Endpoint layers and monitoring automation spelled out so analysts can follow the logic.</p>
+      </a>
+      <a class="widget-card" href="#response">
+        <p class="category-pill">Response</p>
+        <h4>Playbooks &amp; supply chains</h4>
+        <p>Incident actions and supply chain trust lanes, each paired with diagrams.</p>
+      </a>
+    </section>
+
+    <section id="architecture" class="container">
+      <div class="section-header">
+        <h3>Architecture</h3>
+        <p>Zero trust, SASE, and the structures that keep attackers from walking through the front door.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Architecture</p>
+            <h3>Zero Trust Architecture</h3>
+            <p class="article-meta">8 min • diagram: policy + data planes</p>
+            <p>Policy, control, and data plane flows explained in story form. The diagram feels like a chalkboard sketch.</p>
+            <div class="article-footer">
+              <a href="posts/zero-trust-architecture.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">AI Security</p>
-          <h3>Auto-fuzzing hits production APIs</h3>
-          <p class="article-meta">Feb 24, 2026 • 3 min read</p>
-          <p>Several major fintech firms now face new zero-days discovered by generative fuzzers. Tools that build proofs-of-concept in seconds are rewriting red-team scales.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-24-auto-fuzzing.html">Read byte →</a>
+        </article>
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Architecture</p>
+            <h3>SASE Service Edge</h3>
+            <p class="article-meta">7 min • diagram: edge → cloud</p>
+            <p>SD-WAN and cloud-delivered security merge next to the user. Learn when to roll it out.</p>
+            <div class="article-footer">
+              <a href="posts/sase-service-edge.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Endpoint</p>
-          <h3>Firewall zero-day scrapes admin APIs</h3>
-          <p class="article-meta">Feb 24, 2026 • 3 min read</p>
-          <p>A disclosed flaw in a widely deployed firewall lets remote attackers run commands as admin. Patch rollout is mandatory; devices exposed to the internet are being targeted now.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-24-firewall-zero-day.html">Read byte →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="access" class="container">
+      <div class="section-header">
+        <h3>Access control</h3>
+        <p>Identity, MFA, passwordless, and lifecycle stages simplified.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Access</p>
+            <h3>MFA vs Passwordless</h3>
+            <p class="article-meta">6 min • diagram: risk → factor</p>
+            <p>Place MFA when risk surges, keep passwordless on the baseline. The diagram shows the trigger points.</p>
+            <div class="article-footer">
+              <a href="posts/mfa-passwordless.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Crypto</p>
-          <h3>Quantum-resistant rollout hits first enterprise</h3>
-          <p class="article-meta">Feb 23, 2026 • 4 min read</p>
-          <p>After the NIST standard, a multinational bank pushed PQC keys into its PKI. Watch for compatibility headaches and careful migration notes in the appendix.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-23-quantum-rollout.html">Read byte →</a>
+        </article>
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Access</p>
+            <h3>Identity Lifecycle</h3>
+            <p class="article-meta">7 min • diagram: onboard → offboard</p>
+            <p>Document the stages from HR request to deprovisioning so no stale credentials remain.</p>
+            <div class="article-footer">
+              <a href="posts/identity-lifecycle.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Extortion</p>
-          <h3>New ransom group wields data warehouse leaks</h3>
-          <p class="article-meta">Feb 23, 2026 • 5 min read</p>
-          <p>They dump tabular data with minimal commentary but damning context. The payload any team sees is the same: a taunt, the leaked dataset, and a demand.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-23-data-warehouse-ransom.html">Read byte →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="detection" class="container">
+      <div class="section-header">
+        <h3>Detection</h3>
+        <p>Endpoint layers, telemetry, monitoring automation.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Detection</p>
+            <h3>Endpoint Defense Layers</h3>
+            <p class="article-meta">7 min • diagram: prevention → response</p>
+            <p>Every endpoint is a mini SOC. Read how prevention, detection, and response collaborate.</p>
+            <div class="article-footer">
+              <a href="posts/endpoint-defense.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Identity</p>
-          <h3>AI voice phishing clones a CEO</h3>
-          <p class="article-meta">Feb 22, 2026 • 3 min read</p>
-          <p>Call centers reported AI-synthesized voice droppers impersonating leadership. Security teams now require video + voice confirmations.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-22-ai-voice-phish.html">Read byte →</a>
+        </article>
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Detection</p>
+            <h3>Continuous Monitoring</h3>
+            <p class="article-meta">6 min • diagram: event → automation</p>
+            <p>Telemetry ingestion, automation, and calm dashboards. The article lays out the ingestion pipeline.</p>
+            <div class="article-footer">
+              <a href="posts/continuous-monitoring.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Open Source</p>
-          <h3>Maintainers warn of fatigue-based vulnerability</h3>
-          <p class="article-meta">Feb 21, 2026 • 4 min read</p>
-          <p>Infrastructure OSS teams flag the rushed fixes they’re shipping and how the pressure leads to regressions plenty of attackers are already scanning for.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-21-maintainer-fatigue.html">Read byte →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="response" class="container">
+      <div class="section-header">
+        <h3>Response</h3>
+        <p>Playbooks, incidents, and supply chain trust lanes.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Response</p>
+            <h3>Incident Response Runbook</h3>
+            <p class="article-meta">7 min • diagram: detect → recover</p>
+            <p>Script the four acts, automation hooks, and communication templates for speed.</p>
+            <div class="article-footer">
+              <a href="posts/incident-response-runbook.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Healthcare</p>
-          <h3>Telemetry leak exposes regional hospital stack</h3>
-          <p class="article-meta">Feb 20, 2026 • 3 min read</p>
-          <p>Attackers pulled patient telemetry from an unsecured data lake. The leak includes credentials and patient IDs, but no ransom note—yet.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-20-health-telemetry.html">Read byte →</a>
+        </article>
+        <article class="article-card">
+          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="article-copy">
+            <p class="category-pill">Response</p>
+            <h3>Secure Supply Chain</h3>
+            <p class="article-meta">8 min • diagram: vendor → monitor</p>
+            <p>Map the dependencies, verify manifests, and plan the rollback before the poisoned commit lands.</p>
+            <div class="article-footer">
+              <a href="posts/secure-supply-chain.html">Read byte →</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">SatCom</p>
-          <h3>Hydra operators tamper with satellite control uplinks</h3>
-          <p class="article-meta">Feb 19, 2026 • 3 min read</p>
-          <p>Intercepted commands rerouted telemetry while attackers probed for ground-infrastructure exploits. The vulnerability window is still open.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-19-satcom-hydra.html">Read byte →</a>
-          </div>
-        </div>
-      </article>
-      <article class="article-card">
-        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=70');"></div>
-        <div class="article-copy">
-          <p class="eyebrow">Governance</p>
-          <h3>Regulators enforce cross-border logging limits</h3>
-          <p class="article-meta">Feb 18, 2026 • 2 min read</p>
-          <p>New guidance forces ops teams to prove they delete logs flowing between jurisdictions within 72 hours—or face fines.</p>
-          <div class="article-footer">
-            <a href="posts/2026-02-18-cross-border-logs.html">Read byte →</a>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
   </main>
 

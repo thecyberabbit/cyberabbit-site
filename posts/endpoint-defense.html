@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endpoint Defense Layers</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Bytes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Detection Byte</p>
+        <h1>Endpoint defense layers: prevention, detection, response.</h1>
+        <p class="post-meta">Category: Detection • 7 min read</p>
+        <p class="hero-sub">Your endpoint stack should feel like a layered onion, from prevention policies on the outside to detection telemetry in the center.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>Layer 1: prevention. Device hardening, application allowlisting, and behavior baselines keep threats away before they execute. You still need antivirus signatures, but pair them with machine learning heuristics for unknown binary detection.</p>
+    <p>Layer 2: detection. Endpoint Detection and Response (EDR) agents collect process telemetry, network connections, and registry changes. Anomalies trigger alerts, but only after you have tuned noise thresholds. The detection layer feeds a central incident queue.</p>
+    <p>Layer 3: response. When a detection hits, automated containment kicks in—quarantine the device, block the command-and-control IP, and snapshot memory for forensics. Keep playbooks for common detections so the analyst knows the next button press.</p>
+    <p>Endpoint telemetry should also feed a Threat Intelligence Platform (TIP). If a new hash is detected across the fleet, correlate it with feeds and push the indicators back into prevention policies.</p>
+    <p>Finally, run red team exercises that mimic real attack chains, from initial access to lateral movement. If you cannot trace the attacker through all three layers, your instrumentation needs tuning.</p>
+    <p><strong>Takeaway:</strong> View your endpoints like a micro SOC: layer prevention, detection, and response with telemetry flowing between them.</p>
+  </section>
+
+  <section class="diagram clone">
+    <div class="diagram-caption">Stack sketch: prevention → detection → response</div>
+    <svg viewBox="0 0 420 220" role="presentation">
+      <rect x="110" y="20" width="200" height="120" rx="14" class="diagram-node" />
+      <text x="155" y="70" class="diagram-text">prevention</text>
+      <text x="150" y="90" class="diagram-text">(hardening)</text>
+      <rect x="120" y="110" width="180" height="120" rx="14" class="diagram-node" />
+      <text x="165" y="150" class="diagram-text">detection</text>
+      <text x="150" y="170" class="diagram-text">(EDR)</text>
+      <rect x="130" y="190" width="160" height="120" rx="14" class="diagram-node" />
+      <text x="165" y="220" class="diagram-text">response</text>
+      <text x="150" y="240" class="diagram-text">(automation)</text>
+    </svg>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

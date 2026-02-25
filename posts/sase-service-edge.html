@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SASE Service Edge</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Bytes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Product Byte</p>
+        <h1>SASE Service Edge: Shrink the gap between network and security.</h1>
+        <p class="post-meta">Category: Architecture • 7 min read</p>
+        <p class="hero-sub">SASE merges SD-WAN with cloud-delivered security so every branch sees the same controls without backhauling traffic.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>Secure Access Service Edge (SASE) brings security services—firewall, CASB, SWG, ZTNA—into a unified cloud platform that sits right on the edge, next to your users and devices. Traffic no longer trails back to the data center; it lands in the closest security point-of-presence.</p>
+    <p>The key promise is consistency. Every remote worker, branch, or IoT camera gets the same posture checks, inspection, and logging. Zero trust policies can be enforced the instant a device connects, regardless of geography.</p>
+    <p>Operators champion SASE for its visibility. A single console shows WAN health, latency, policy violations, and anomalies. You can tie that telemetry into your SOC without juggling five vendor portals.</p>
+    <p>But SASE also requires thoughtful phasing: start with SD-WAN overlay and enforce secure web gateways for high-risk apps. Gradually migrate remote office tunnels and then enable ZTNA for sensitive SaaS workloads.</p>
+    <p>The operational litmus test: can a user switch continents and still see the same rules? If not, you need better policy orchestration or a more adaptive point-of-presence.</p>
+    <p><strong>Takeaway:</strong> Think of SASE as a security guard that travels with your traffic, not a gatekeeper stuck at HQ. Deploy it close to the user and keep the policies declarative.</p>
+  </section>
+
+  <section class="diagram clone">
+    <div class="diagram-caption">Hand-drawn nodes: user → edge → cloud services</div>
+    <svg viewBox="0 0 420 200" role="presentation">
+      <rect x="40" y="120" width="90" height="45" class="diagram-node" rx="8" />
+      <text x="55" y="150" class="diagram-text">branch</text>
+      <rect x="160" y="70" width="110" height="50" class="diagram-node" rx="8" />
+      <text x="170" y="100" class="diagram-text">SASE SWG</text>
+      <rect x="310" y="120" width="90" height="45" class="diagram-node" rx="8" />
+      <text x="325" y="150" class="diagram-text">cloud apps</text>
+      <path d="M 130 140 Q 200 40 280 140" class="diagram-line" />
+      <circle cx="200" cy="130" r="18" class="diagram-node" />
+      <text x="190" y="136" class="diagram-text">inspect</text>
+      <line x1="120" y1="140" x2="280" y2="140" class="diagram-line" />
+    </svg>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

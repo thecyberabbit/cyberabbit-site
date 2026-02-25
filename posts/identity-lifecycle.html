@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identity Lifecycle</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Bytes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Access Byte</p>
+        <h1>Identity lifecycle: From onboarding to offboarding.</h1>
+        <p class="post-meta">Category: Access • 7 min read</p>
+        <p class="hero-sub">Each identity has a life story. Document the stages so overprovisioning and orphaned accounts never appear in your threat model.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>The identity lifecycle begins before the desk is assigned. HR creates an identity request, security validates the role, and automation scripts spin up the account with just-in-time access rules. Access approval workflows embedded with documentation guardrails keep everything auditable.</p>
+    <p>During the “in-life” stage, your identity platform must monitor behavioral risk. Login anomalies, multiple concurrent sessions, or suspicious authentications trigger additional verification layers. The identity provider should also refresh credentials automatically or require re-vetting for sensitive apps.</p>
+    <p>When an employee changes roles, the role change stage triggers bridging: remove group memberships tied to the old team and add the new ones. Use attribute-based access controls so policies adjust automatically without manual paperwork.</p>
+    <p>Offboarding is where most breaches happen—forgotten logins, orphaned API keys, and stale device certificates linger. Automate offboarding with HR hooks that drop accounts, revoke certificates, and wipe device trust anchors within seconds of termination.</p>
+    <p>Periodic attestation closes the loop. Every six months (or sooner for high-risk roles), run an automated review where application owners confirm that users still need access. Flag non-responses and rotate entitlements.</p>
+    <p><strong>Takeaway:</strong> Treat identity like a living document: track creation, updates, and destruction with orchestration, and let risk-based automation handle the heavy lifting.</p>
+  </section>
+
+  <section class="diagram clone">
+    <div class="diagram-caption">Lifecycle sketch: onboard → in-life → transition → offboard</div>
+    <svg viewBox="0 0 420 220" role="presentation">
+      <rect x="20" y="140" width="90" height="40" rx="10" class="diagram-node" />
+      <text x="30" y="165" class="diagram-text">onboard</text>
+      <rect x="140" y="140" width="90" height="40" rx="10" class="diagram-node" />
+      <text x="150" y="165" class="diagram-text">in-life</text>
+      <rect x="260" y="140" width="90" height="40" rx="10" class="diagram-node" />
+      <text x="270" y="165" class="diagram-text">transition</text>
+      <rect x="380" y="140" width="90" height="40" rx="10" class="diagram-node" />
+      <text x="390" y="165" class="diagram-text">offboard</text>
+      <polyline points="65,140 65,100 380,100" class="diagram-line" />
+      <path d="M 150 120 Q 225 50 310 120" class="diagram-line" />
+    </svg>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

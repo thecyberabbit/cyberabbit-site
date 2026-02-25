@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Continuous Monitoring</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-stack">
+        <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+        <div>
+          <p class="logo-subhead">Cyberabbit</p>
+          <p class="logo-motto">Byte-sized security news with a bite.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Bytes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container post-hero-content">
+      <div>
+        <p class="eyebrow">Detection Byte</p>
+        <h1>Continuous monitoring: telemetry, automation, and calm.</h1>
+        <p class="post-meta">Category: Detection • 6 min read</p>
+        <p class="hero-sub">A solid monitoring program turns panic into context. Collect logs, normalize them, automate action, and keep the ops team calm.</p>
+      </div>
+      <div class="post-hero-image" style="background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=1200&q=80');"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>Continuous monitoring is the discipline of collecting telemetry from endpoints, network, cloud workloads, and identity platforms, then routing it into a central data lake (SIEM, XDR, streaming). The key is automation: enrichment, scoring, and routing all happen without human delay.</p>
+    <p>Focus on signal. Use parsers to convert logs into structured events, apply threat intelligence enrichments, and index them for search. Alert fatigue happens when you monitor raw data, so threshold only on meaningful trends.</p>
+    <p>Automation runs the book: once the detection hits, orchestrate playbooks that contain, notify, and escalate. If your playbooks depend on spreadsheets, rewrite them as code with guardrails.</p>
+    <p>Dashboards keep teams in sync. Surface the highest risk events, the most active users, and the evolving MITRE tactics in a single pane.</p>
+    <p>Feedback loops matter: integrate remediation metrics into the monitoring plan. Track Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR) and adjust detection rules when the numbers slip.</p>
+    <p><strong>Takeaway:</strong> Monitoring is not just logging. It’s telemetry ingestion, decision automation, and calm, visible dashboards for defenders who sleep during the night shift.</p>
+  </section>
+
+  <section class="diagram clone">
+    <div class="diagram-caption">Sketch: event → ai → action</div>
+    <svg viewBox="0 0 420 220" role="presentation">
+      <circle cx="80" cy="110" r="30" class="diagram-node" />
+      <text x="65" y="115" class="diagram-text">event</text>
+      <rect x="160" y="70" width="120" height="60" rx="10" class="diagram-node" />
+      <text x="180" y="100" class="diagram-text">analysis</text>
+      <rect x="320" y="90" width="90" height="50" rx="10" class="diagram-node" />
+      <text x="335" y="120" class="diagram-text">action</text>
+      <path d="M 110 110 Q 220 130 320 110" class="diagram-line" />
+      <path d="M 200 110 L 200 40" class="diagram-line" />
+      <text x="210" y="40" class="diagram-text">automation</text>
+    </svg>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2025 Cyberabbit. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
