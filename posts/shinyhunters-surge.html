@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShinyHunters Surge — Cyberabbit News</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="../index.html">
+          <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit News</p>
+            <p class="logo-note">ShinyHunters and friends under the microscope.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="post-hero">
+        <div class="container">
+          <div class="post-hero-content">
+            <div>
+              <p class="status-pill">Investigative Report</p>
+              <h1>ShinyHunters is back — social engineering, fashion fines, and the same voice phishing recipes.</h1>
+              <p class="post-meta">
+                This dossier stitches together Figure, Dior/Louis Vuitton/Tiffany, Crunchbase, and telecom vendors that
+                have all been hit by similar social-engineering or credential-theft playbooks.
+              </p>
+              <p class="post-meta">Long read • 11 minutes</p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1485947141905-4c5a560a1e18?auto=format&fit=crop&w=1400&q=80"
+                alt="Threat actor silhouette over corporate dashboards"
+                data-prompt="Prompt: Threat actor silhouette bent over corporate dashboards with floating breach headlines"
+              />
+              <p class="image-prompt">
+                Prompt used: Threat actor silhouette bent over corporate dashboards with floating breach headlines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-body container">
+        <h2>Voice phishing and the new normal</h2>
+        <p>
+          ShinyHunters is back in circulation with a familiar pattern: they own a voice-phishing or social engineering
+          vector, nail down employee access credentials, then probe SaaS databases for rich customer metadata. In February
+          2026 the gang leaked 2.56 GB of Figure data, citing CRM dumps, applicant data, KYC documents, and employee
+          dossiers (AppliedTech, Feb 20, 2026). A long tail of customers — nearly 1 million accounts — were exposed.
+        </p>
+
+        <h2>Luxury brands pay the price</h2>
+        <p>
+          South Korea’s PIPC slapped Dior, Louis Vuitton, and Tiffany with a combined ₩36 billion (~$25 million) fine
+          after malware/voice-phishing incidents compromised over 5 million individuals. Regulators highlighted weak
+          staff training around external communications and an overreliance on email OTPs, classic enablers of the same
+          ShinyHunters toolkit that worked against Figure and Crunchbase earlier in the year.
+        </p>
+
+        <h2>Crunchbase, third parties, and the new blueprint</h2>
+        <p>
+          Crunchbase confirmed the gang had extracted 2 million records through voice phishing as well. The data went
+          beyond personal identifiers, including company contracts and internal notes that an attacker could reuse to
+          social-engineer suppliers. These incidents share a blueprint: the attacker starts with a low-profile voice call,
+          gathers credentials or API keys, then escalates to whichever SaaS environment contains the highest density of
+          customers.
+        </p>
+
+        <h2>Lessons for SOCs and privacy teams</h2>
+        <ul>
+          <li>
+            Treat voice phishing like an active threat vector: log who has access to the CRM admin panel and kick off
+            identity proofing for every suspicious call.
+          </li>
+          <li>
+            Demo how ShinyHunters reuses the same data exfil pipeline — once they have CRM access, they harvest all
+            customer metadata, so your telemetry should flag bulk downloads and exports immediately.
+          </li>
+          <li>
+            Factor in regulatory fallout: brands are now learning that failing to segment CRM and marketing data results
+            in multi-million-dollar fines, especially when cross-border customers are affected.
+          </li>
+        </ul>
+      </section>
+
+      <section class="source-block container">
+        <h3>Sources</h3>
+        <ul class="source-list">
+          <li>
+            AppliedTech weekly, “This Week in Cybersecurity, Feb 20, 2026” — covers Figure, Dior/Louis Vuitton/Tiffany,
+            and Crunchbase incidents (<a href="https://www.appliedtech.us/resource-hub/this-week-in-cybersecurity-feb20-2026/">Link</a>)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cyberabbit News — Investigations with citations.</p>
+        <a href="../blog.html">Return to the newsroom</a>
+      </div>
+    </footer>
+  </body>
+</html>

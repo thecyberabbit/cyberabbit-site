@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telco Salt Typhoon — Cyberabbit News</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="../index.html">
+          <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit News</p>
+            <p class="logo-note">Telcos remain the irresistible target.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="post-hero">
+        <div class="container">
+          <div class="post-hero-content">
+            <div>
+              <p class="status-pill">Strategic Brief</p>
+              <h1>Salt Typhoon (UNC3886) and the Odido leak prove telcos are still an espionage corridor.</h1>
+              <p class="post-meta">
+                We document the Singapore investigation into UNC3886 and the Odido leak of 6.2+ million customer records, then
+                lay out what defenders must harden.
+              </p>
+              <p class="post-meta">Long read • 9 minutes</p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80"
+                alt="Telecom towers at night with digital overlays"
+                data-prompt="Prompt: Nighttime telecom towers with neon signal pulses and shadowy access trails"
+              />
+              <p class="image-prompt">
+                Prompt used: Nighttime telecom towers with neon signal pulses and shadowy access trails.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-body container">
+        <h2>UNC3886, Salt Typhoon, and Singapore’s telecom alert</h2>
+        <p>
+          Singapore’s government confirmed that UNC3886 — the China-linked group also tagged as Salt Typhoon — has been
+          probing the country’s four largest telcos (Singtel, StarHub, M1, and Simba Telecom) with advanced persistence
+          tools. The attackers gained footholds in under-monitored networks, installed rootkits, and moved laterally without
+          disrupting subscriber services.<br />
+          According to the Government Technology Agency, the adversary accessed some critical systems but did not reach customer
+          data. Still, the breach proves that telecom control planes remain enticing for espionage: they sit on service
+          metadata, numbering plans, and the authentication backbone for both mass and enterprise communications.
+        </p>
+
+        <h2>Odido’s 6.2 million customer leak</h2>
+        <p>
+          Dutch telco Odido confirmed that hackers extracted 6.2 million customers’ names, contact details, IBANs, and
+          passport/ID data after infiltrating a customer contact system. Odido says its network services remained up, but
+          former customers whose service ended within the last two years are also listed in the stolen dataset.
+          Importantly, Odido says the breach did not include call logs, billing files, or location data, which narrows the
+          impact but still exposes IDs and payment information that can be abused by fraudsters.
+        </p>
+        <p>
+          Analysts tie this leak to a larger wave of telco-targeted espionage, especially the Salt Typhoon operations that have
+          repeatedly targeted carriers across Norway, Canada, the US, and Singapore. The Odido attackers reportedly used a
+          targeted intrusion in a CRM to siphon the customer data quietly over time.
+        </p>
+
+        <h2>Why telcos remain prime targets</h2>
+        <ul>
+          <li>
+            (1) Telcos hold customer identities, billing records, and, for enterprise clients, privileged VPN and MFA access.
+          </li>
+          <li>
+            (2) Control-plane infrastructure often lacks layered segmentation, so a single foothold can yield broad visibility
+            inside networks and even help stage future attacks on government or defense customers.
+          </li>
+          <li>
+            (3) Regulatory notices around telco breaches can lag, creating months of quiet windows for reconnaissance and
+            market advantage, which is what Salt Typhoon leverages in its “prepositioning” plays.
+          </li>
+        </ul>
+
+        <h2>Defender posture</h2>
+        <p>
+          Telcos should treat CRM, ticketing, and onboarding portals as high-risk zones. Multi-factor protection needs to be
+          standard on these apps, with privileged access reviewed monthly. Logging should capture unusual exports or downloads
+          of customer data, especially when the request originates from a new IP range or from a workstation with no hardware-based
+          identity token.
+        </p>
+        <p>
+          Global carriers are re-evaluating vendor risk for their partners’ CRM accounts. Do not expose contractor or support
+          desks without narrow, ephemeral credentials and enforced logging.
+        </p>
+      </section>
+
+      <section class="source-block container">
+        <h3>Sources</h3>
+        <ul class="source-list">
+          <li>
+            TechCrunch, “Singapore says China-backed hackers targeted its four largest phone companies”
+            (<a href="https://techcrunch.com/2026/02/10/singapore-china-backed-hackers-targeted-largest-phone-companies-salt-typhoon/">Link</a>)
+          </li>
+          <li>
+            Yahoo News, “Dutch phone giant Odido says millions of customers affected by data breach”
+            (<a href="https://www.yahoo.com/news/articles/dutch-phone-giant-odido-says-155413793.html">Link</a>)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cyberabbit News — Tracking telco exposures.</p>
+        <a href="../blog.html">Back to newsroom</a>
+      </div>
+    </footer>
+  </body>
+</html>

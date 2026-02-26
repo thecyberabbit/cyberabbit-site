@@ -1,171 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cyberabbit — Byte-sized Cybersecurity Concepts</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container header-flex">
-      <div class="logo-stack">
-        <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
-        <div>
-          <p class="logo-subhead">Cyberabbit</p>
-          <p class="logo-motto">Simplifying cyber concepts for curious humans.</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberabbit News — Long-Form Cybersecurity Coverage</title>
+    <meta
+      name="description"
+      content="Cyberabbit News curates long-form coverage of every major cybersecurity incident, campaign, and policy shift since January 1, 2026."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="index.html">
+          <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit News</p>
+            <p class="logo-note">Catching every major/medium cyber story since 2026.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Stories</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Bytes</a></li>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="badge">Breaking Signal</span>
+            <h1>Cyberabbit News is now a full newsroom for cybersecurity.</h1>
+            <p>
+              Long-form, sourced, and relentlessly factual coverage of every major or medium-sized breach,
+              campaign, and regulation since 1/1/2026. Think of these pieces as multi-section dispatches that
+              pair narrative, data, and analysis with source links and relevant visuals.
+            </p>
+            <div class="hero-actions">
+              <a class="cta" href="blog.html">Explore the newsroom</a>
+              <a class="secondary" href="#timeline">See what we already logged</a>
+            </div>
+          </div>
+          <div class="featured-radar">
+            <p class="status-pill">Live tracker</p>
+            <h2>We chase every ripple.</h2>
+            <p>
+              4 in-depth briefs so far, all updated for accuracy.
+              We cover breaches, nation-state maneuvering, telco espionage, and long-tail supply-chain fallout.
+            </p>
+            <ul class="timeline-list" style="margin-top: 18px;">
+              <li>
+                <strong>25M+ victims</strong>
+                <span class="timeline-meta">Conduent breach expanding into 2026.</span>
+              </li>
+              <li>
+                <strong>700GB exposed</strong>
+                <span class="timeline-meta">Dual ESA incidents via unpatched external servers.</span>
+              </li>
+              <li>
+                <strong>6.2M+ telco accounts</strong>
+                <span class="timeline-meta">Odido, Salt Typhoon, and global telecom pressure.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section-header">
+          <h2>Latest long-form briefs</h2>
+          <p>Each story is at least 1,500 words, sourced, and written to stand in your newsroom.</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"
+                alt="Government documents overlayed by red ransomware banners"
+                loading="lazy"
+                data-prompt="Prompt: Moody state office desk with leaked documents and glowing ransomware warning"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">Conduent</p>
+              <h3>25 million lives affected — Conduent’s breach keeps expanding</h3>
+              <p>
+                We map the ransomware campaign, the forensic timeline, and the public-benefits systems that
+                share Conduent’s data — plus what state attorneys general still need to disclose.
+              </p>
+              <time>Long read • 12 min</time>
+              <footer>
+                <a href="posts/conduent-breach-deep-dive.html">Read the dispatch →</a>
+              </footer>
+              <p class="image-prompt">
+                Prompt used: Moody state office desk with leaked documents and glowing ransomware warning overlays.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
+                alt="Space agency control room with network overlay"
+                loading="lazy"
+                data-prompt="Prompt: Control room with satellite schematics and ghostly data leaks glowing on screens"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">ESA Exposure</p>
+              <h3>ESA breach dossier: two raids, unpatched servers, and 700 GB of secrets</h3>
+              <p>
+                Dual intrusions on ESA's science servers, proof of exported data, and why the agency’s vendor mix
+                keeps exposing mission knowledge.
+              </p>
+              <time>Long read • 10 min</time>
+              <footer>
+                <a href="posts/esa-double-intrusion.html">Read the dossier →</a>
+              </footer>
+              <p class="image-prompt">
+                Prompt used: Control room with satellite schematics and ghostly data leaks glowing on screens.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=1600&q=80"
+                alt="Dark silhouette of a threat actor in a hoodie with digital overlays"
+                loading="lazy"
+                data-prompt="Prompt: Dark hoodie-wearing individual surrounded by breached data tiles and floating code"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">ShinyHunters &amp; friends</p>
+              <h3>ShinyHunters spree: social engineering, luxury fines, and reset buttons</h3>
+              <p>
+                Nail down how the gang keeps pivoting, why voice-phishing works, and how regulators now fine Dior, Tiffany,
+                and Louis Vuitton for the same playbook.
+              </p>
+              <time>Long read • 11 min</time>
+              <footer>
+                <a href="posts/shinyhunters-surge.html">Read the investigation →</a>
+              </footer>
+              <p class="image-prompt">
+                Prompt used: Dark hoodie-wearing individual surrounded by breached data tiles and floating code.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80"
+                alt="City skyline with glowing telecom towers and stealthy access lines"
+                loading="lazy"
+                data-prompt="Prompt: Telecom skyline at night with neon signal lines and covert access points"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">Telco Pressure</p>
+              <h3>Salt Typhoon &amp; Odido: telecoms under siege in 2026</h3>
+              <p>
+                Telcos are still the easiest path for espionage. We explain Salt Typhoon’s UNC3886 choreography, the Odido leak,
+                and how global carriers are responding.
+              </p>
+              <time>Long read • 9 min</time>
+              <footer>
+                <a href="posts/telco-salt-typhoon.html">Read the briefing →</a>
+              </footer>
+              <p class="image-prompt">
+                Prompt used: Telecom skyline at night with neon signal lines and covert access points.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section container">
+        <h2>What we have tracked so far</h2>
+        <p>
+          The newsroom records each major event since January 1, 2026. The events below are updated as new filings and
+          disclosures arrive.
+        </p>
+        <ul class="timeline-list">
+          <li>
+            <strong>Jan 2026 — Conduent report expands</strong>
+            <span class="timeline-meta">Multiple states push totals above 25 million individuals hit by SafePay ransomware.</span>
+          </li>
+          <li>
+            <strong>Late 2025 / Jan 2026 — ESA external leak</strong>
+            <span class="timeline-meta">Two raids expose 700+ GB of source code, mission notes, contractor data.</span>
+          </li>
+          <li>
+            <strong>Feb 2026 — Odyssey of ShinyHunters</strong>
+            <span class="timeline-meta">Figure, Crunchbase, Dior/Louis Vuitton/Tiffany, and others hit by social engineering and malware.</span>
+          </li>
+          <li>
+            <strong>Feb 2026 — Telecom espionage pressure</strong>
+            <span class="timeline-meta">UNC3886 (Salt Typhoon) and Odido breach show why telcos remain espionage magnets.</span>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Mission byte</p>
-          <h1>Every cyber concept explained like it’s a bedtime story—with diagrams.</h1>
-          <p>We turn architectures, products, and terms into approachable stories. Think of Cyberabbit as your glossary, your cheat-sheet, and your animated whiteboard, all in one.</p>
-          <p class="hero-sub">The writing is concise, the explanations are long enough to be meaningful, and the diagrams always feel hand-sketched.</p>
-          <div class="hero-actions">
-            <a href="blog.html" class="cta">Browse the bytes</a>
-            <a href="#categories" class="secondary">See the categories</a>
-          </div>
-        </div>
-        <div class="hero-panel">
-          <div class="panel-card animate-glow">
-            <p class="panel-label">Concept flow</p>
-            <h3>Understand before you implement.</h3>
-            <p class="panel-copy">We break down security stacks into legacy-free layers and share exactly what teams need to do first.</p>
-            <span class="panel-tag">No sales babble. Just clarity.</span>
-          </div>
-          <div class="panel-card muted">
-            <p class="panel-label">Visual cheat</p>
-            <p class="panel-copy">Each article includes a diagram or flow that feels hand-drawn, reinforcing the story as you read.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section class="coverage-section container">
+        <h2>Why Cyberabbit News?</h2>
+        <p>
+          We produce scoped stories that marry investigative reporting with tactical context: every timeline, public
+          disclosure, and patch advisory is footnoted, every dataset is tabulated, and every image is paired with the
+          prompt that shaped it. This newsroom keeps a rolling log of every major or medium-sized cyber event since
+          1/1/2026, and we refresh every brief as new intelligence surfaces.
+        </p>
+        <p class="archive-cta">
+          Want to browse the archive? <a href="blog.html">See every published briefing →</a>
+        </p>
+      </section>
+    </main>
 
-    <section class="category-section" id="categories">
-      <div class="section-header">
-        <h3>Categories</h3>
-        <p>Click any card to jump straight to the spotlighted collection on Bytes.</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cyberabbit News · Ghosts in the machine, now in journalism.</p>
+        <a href="blog.html">Stories</a>
       </div>
-      <div class="category-grid">
-        <a class="widget-card" href="blog.html#architecture">
-          <p class="category-pill">Architecture</p>
-          <h4>Architectural idea bytes</h4>
-          <p>Zero trust, SASE, and secure zones explained with flows instead of slides.</p>
-        </a>
-        <a class="widget-card" href="blog.html#access">
-          <p class="category-pill">Access</p>
-          <h4>Access control stories</h4>
-          <p>MFA, passwordless, identity lifecycle, and risk-aware gating—narrated plainly.</p>
-        </a>
-        <a class="widget-card" href="blog.html#detection">
-          <p class="category-pill">Detection</p>
-          <h4>Detection &amp; monitoring</h4>
-          <p>Endpoint layers, telemetry streams, and monitoring automation artifacts all demystified.</p>
-        </a>
-        <a class="widget-card" href="blog.html#response">
-          <p class="category-pill">Response</p>
-          <h4>Response playbooks</h4>
-          <p>Incident runbooks, supply chain trust, and recovery flows sketched out like a whiteboard.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="signal-stack" id="signals">
-      <div class="section-header">
-        <h3>How the bytes land</h3>
-        <p>We review vendor docs, RFCs, and architectural patterns before we write a single paragraph.</p>
-      </div>
-      <div class="stack-grid">
-        <article class="signal-card">
-          <h4>Curated research</h4>
-          <p>Privacy papers, vendor blueprints, and open standards feed the context for each explanation.</p>
-        </article>
-        <article class="signal-card">
-          <h4>Short, proven stories</h4>
-          <p>The goal is clarity. Each byte ends with a takeaway and a diagram that answers “how does it move?”</p>
-        </article>
-        <article class="signal-card">
-          <h4>Always clickable</h4>
-          <p>Every widget, card, and section links to the full article so you can dive deeper without hunting.</p>
-        </article>
-        <article class="signal-card">
-          <h4>Animated clarity</h4>
-          <p>CSS animations keep the experience modern—tactile gradients, floating cards, and soft glows keep the page alive.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="featured-byte container">
-      <div class="section-header">
-        <h3>Featured explainer</h3>
-        <p>The newest concept byte fresh from the sketchpad.</p>
-      </div>
-      <div class="featured-grid">
-        <article class="featured-card">
-          <p class="eyebrow">Latest</p>
-          <h4>Incident response runbook: ink it, then do it.</h4>
-          <p>Four acts, one scripted response. The latest release shows the flow from detection to recovery with actionable playbook snippets.</p>
-          <footer>
-            <span>Response • 7 min</span>
-            <a href="posts/incident-response-runbook.html">Explore →</a>
-          </footer>
-        </article>
-        <article class="featured-card">
-          <p class="eyebrow">Quick lookup</p>
-          <h4>Zero Trust Architecture</h4>
-          <p>Policy, control, and data planes explained in plain language with a confident diagram that feels hand-drawn.</p>
-          <footer>
-            <span>Architecture • 8 min</span>
-            <a href="posts/zero-trust-architecture.html">Explore →</a>
-          </footer>
-        </article>
-      </div>
-    </section>
-
-    <section class="trend-feed container">
-      <div class="section-header">
-        <h3>Sticky ideas</h3>
-        <p>Little reminders you can tap for the full byte.</p>
-      </div>
-      <div class="trend-grid">
-        <article class="trend-card">
-          <span class="trend-eyebrow">Architecture</span>
-          <h4>The SASE edge keeps security close to the worker.</h4>
-          <p>No more backhauling tunnels. The policy lives with the user’s nearest POP; the explanations show you the difference between SD-WAN and SASE.</p>
-        </article>
-        <article class="trend-card">
-          <span class="trend-eyebrow">Access</span>
-          <h4>Device posture weighs just as much as identity.</h4>
-          <p>Identity + device posture + risk engine = access policy. The articles show the handshake step by step.</p>
-        </article>
-        <article class="trend-card">
-          <span class="trend-eyebrow">Detection</span>
-          <h4>Monitoring is a conversation, not a dump.</h4>
-          <p>Telemetry is the script the SOC follows. We talk about ingestion, automation, and calm dashboards.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <p>© 2025 Cyberabbit. Short for “cybernetic rabbit surveillance.”</p>
-      <div class="footer-links">
-        <a href="blog.html">Bytes</a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

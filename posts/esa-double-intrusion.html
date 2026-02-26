@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESA Double Intrusion — Cyberabbit News</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="../index.html">
+          <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit News</p>
+            <p class="logo-note">ESA: 700+ GB exposed.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="post-hero">
+        <div class="container">
+          <div class="post-hero-content">
+            <div>
+              <p class="status-pill">Intel Brief</p>
+              <h1>ESA confirms two breaches: 200 GB in December, 500 GB in early January.</h1>
+              <p class="post-meta">
+                A forensic replay of the claims, the likely vulnerability reuse, and why mission data still haunts
+                contractors.
+              </p>
+              <p class="post-meta">Long read • 10 minutes</p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?auto=format&fit=crop&w=1400&q=80"
+                alt="Spacecraft engineering workspace with cascading data streams"
+                data-prompt="Prompt: Clean spacecraft engineering workspace with neon data streams leaking into the margin"
+              />
+              <p class="image-prompt">
+                Prompt used: Clean spacecraft engineering workspace with neon data streams leaking into the margin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-body container">
+        <h2>What happened</h2>
+        <p>
+          The European Space Agency confirmed a December 26, 2025 breach on its external science servers after a threat
+          actor calling itself “888” advertised roughly 200 gigabytes of stolen data on BreachForums. Within weeks, a
+          second group tying itself to Scattered Lapsus$ claimed another 500 gigabytes of material, including mission
+          procedures, satellite documentation, and supplier secrets.
+        </p>
+
+        <h2>Timeline</h2>
+        <ul>
+          <li>
+            <strong>Dec 18–26, 2025:</strong> “888” gains access to external servers, hoards source code, API tokens,
+            Terraform files, and internal Bitbucket/JIRA snapshots, then posts proof on BreachForums.
+          </li>
+          <li>
+            <strong>Dec 29–30, 2025:</strong> ESA acknowledges the breach, describing the affected servers as limited
+            to unclassified science endpoints.
+          </li>
+          <li>
+            <strong>Early Jan 2026:</strong> Scattered Lapsus$ “Hunters” claim 500 GB more stolen via the same flaw; ESA
+            launches a criminal probe. Data includes contractor notes from SpaceX, Airbus, and Thales Alenia Space.
+          </li>
+        </ul>
+
+        <h2>What was at risk</h2>
+        <p>
+          The stolen troves were said to contain CI/CD pipeline configurations, JIRA tickets, API keys, and credentials for
+          platforms like Bitbucket. The sheer quantity of Terraform and SQL files creates a stepping stone for attackers to
+          pivot to more sensitive networks by reusing credentials or misconfiguring new infrastructure. Even if ESA called
+          the servers “unclassified,” the stolen engineering context gives attackers narratives on upcoming missions and
+          system dependencies.
+        </p>
+        <p>
+          ESA’s own note warns that the attackers had access to “source code, CI/CD pipelines, API/access tokens, hardcoded
+          credentials, private repositories, and configuration artifacts,” which means any builder or supplier tied to
+          those tools must now rotate secrets and verify supply chain integrity.
+        </p>
+
+        <h2>Why this keeps matters</h2>
+        <p>
+          Reusing the same vulnerability twice — once for 200 GB, once for 500 GB — highlights a patch management gap.
+          Without an isolated bastion or a proper zero-trust policy on the science networks, attackers simply re-entered
+          the same external portal. The doubled exposure also shows why mission data is only as safe as the vendor
+          ecosystems that feed it.
+        </p>
+        <p>
+          The incident has historical context: ESA’s 2024 merchandise store skimming attack and a 2015 breach keep
+          resurfacing as proof that sophisticated intruders remain interested in the space agency’s supply chain.
+        </p>
+
+        <h2>Defender takeaways</h2>
+        <ul>
+          <li>
+            Treat “unclassified” systems as high-risk if they expose CI/CD or developer tools.
+          </li>
+          <li>
+            Rotate API tokens and keys as soon as an external server shows evidence of odd downloads or persistence.
+          </li>
+          <li>
+            Isolate contractor portals with MFA, least privilege, and separate monitoring so a breach on an external
+            system cannot cascade inward.
+          </li>
+        </ul>
+      </section>
+
+      <section class="source-block container">
+        <h3>Sources</h3>
+        <ul class="source-list">
+          <li>
+            Paubox blog, “European Space Agency confirms breach after hacker claims stolen data”
+            (<a href="https://www.paubox.com/blog/european-space-agency-confirms-breach-after-hacker-claims-200gb-of-stolen-data">Link</a>)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cyberabbit News — Tracking the orbital supply chain.</p>
+        <a href="../blog.html">Back to newsroom</a>
+      </div>
+    </footer>
+  </body>
+</html>

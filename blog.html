@@ -1,202 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bytes - Cyberabbit</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container header-flex">
-      <div class="logo-stack">
-        <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
-        <div>
-          <p class="logo-subhead">Cyberabbit</p>
-          <p class="logo-motto">Byte-sized reporting with a bite.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stories — Cyberabbit Newsroom</title>
+    <meta
+      name="description"
+      content="Every cybersecurity story since January 2026 with source links, timelines, and long-form analysis."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="index.html">
+          <img src="logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit Stories</p>
+            <p class="logo-note">From breach logs to nation-state playbooks.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <div class="container">
+          <p class="status-pill">Dispatch Log</p>
+          <h1>Every story is long-form with sourced evidence, timeline graphics, and actionable takeaways.</h1>
+          <p>
+            The newsroom tracks every major and medium-sized incident that matters to defenders, CISOs, and
+            investigators. Each brief references public filings, regulatory notices, and analyst coverage so you can
+            cite the work from your war room.
+          </p>
         </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Bytes</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      </section>
 
-  <main>
-    <section class="blog-hero">
+      <section class="container">
+        <div class="news-grid">
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"
+                alt="Government documents overlayed by red ransomware banners"
+                loading="lazy"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">Conduent Breach</p>
+              <h3>Conduent breach deep dive</h3>
+              <p>
+                Timeline from the Jan 2025 ransomware attack to the latest 2026 disclosures, plus examination of the
+                8 TB trove, SafePay’s claims, and the state agencies still notifying citizens.
+              </p>
+              <ul class="source-list">
+                <li>States now report 25M+ records exposed (TechCrunch, Malwarebytes).</li>
+                <li>Medical, SSNs, and benefits data spread across 30+ programs.</li>
+                <li>Analysis of notification delays and regulator expectations.</li>
+              </ul>
+              <footer>
+                <a href="posts/conduent-breach-deep-dive.html">Read the brief →</a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
+                alt="Space agency control room with network overlay"
+                loading="lazy"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">ESA Exposure</p>
+              <h3>ESA double intrusion dossier</h3>
+              <p>
+                Dual leaks of 200 GB and 500 GB. We detail the evidence, why the same hole was reused, and how contractors
+                are affected.
+              </p>
+              <ul class="source-list">
+                <li>Paubox confirmed data offered for sale on BreachForums.</li>
+                <li>Victim data included source code, Terraform, CI/CD, and Bitbucket repos.</li>
+                <li>Analysis of ESA’s incident history and recovery posture.</li>
+              </ul>
+              <footer>
+                <a href="posts/esa-double-intrusion.html">Read the dossier →</a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=1600&q=80"
+                alt="Dark silhouette of a threat actor in a hoodie with digital overlays"
+                loading="lazy"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">ShinyHunters</p>
+              <h3>Social engineering spree and luxury fines</h3>
+              <p>
+                We decoded how a syndicate keeps breaking into customer datasets, why regulators landed $25M fines, and
+                how organizations can inoculate their CRM and knowledge workers.
+              </p>
+              <ul class="source-list">
+                <li>Figure incident exposed 2.56 GB via a social engineering attack.</li>
+                <li>Dior, Louis Vuitton, and Tiffany were fined ₩36B for poor safeguards.</li>
+                <li>Crunchbase and other SaaS platforms also targeted with voice phishing.</li>
+              </ul>
+              <footer>
+                <a href="posts/shinyhunters-surge.html">Read the investigation →</a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80"
+                alt="City skyline with glowing telecom towers and stealthy access lines"
+                loading="lazy"
+              />
+            </figure>
+            <div class="news-card-content">
+              <p class="status-pill">Telco Espionage</p>
+              <h3>Salt Typhoon, UNC3886, and the Odido fallout</h3>
+              <p>
+                A strategic look at how Chinese-linked threat actors touched telco control planes, plus the Odido data dump’s
+                customer info scope.
+              </p>
+              <ul class="source-list">
+                <li>UNC3886 (Salt Typhoon) targeted Singapore telcos without service impact.</li>
+                <li>Odido confirms 6.2M+ customers with IBAN and passport data stolen.</li>
+                <li>Why telcos remain high-value targets for espionage and fraud.</li>
+              </ul>
+              <footer>
+                <a href="posts/telco-salt-typhoon.html">Read the briefing →</a>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <p class="eyebrow">Byte Log</p>
-        <h1>Concepts, architectures, and terminology—explained with diagrams.</h1>
-        <p>Every article combines a concise narrative, a hand-sketched diagram, and clickable logic so you can teach it to your team later.</p>
+        <p>© 2026 Cyberabbit News · We keep the rabbit hole transparent.</p>
+        <a href="index.html">Homepage</a>
       </div>
-    </section>
-
-    <section class="category-grid container">
-      <a class="widget-card" href="#architecture">
-        <p class="category-pill">Architecture</p>
-        <h4>Zero trust, SASE</h4>
-        <p>Understand how policies flow, where the controls live, and why trust is never assumed.</p>
-      </a>
-      <a class="widget-card" href="#access">
-        <p class="category-pill">Access</p>
-        <h4>Authentication deep dives</h4>
-        <p>See identity lifecycle and MFA/passwordless trade-offs with actionable diagrams.</p>
-      </a>
-      <a class="widget-card" href="#detection">
-        <p class="category-pill">Detection</p>
-        <h4>Telemetry explained</h4>
-        <p>Endpoint layers and monitoring automation spelled out so analysts can follow the logic.</p>
-      </a>
-      <a class="widget-card" href="#response">
-        <p class="category-pill">Response</p>
-        <h4>Playbooks &amp; supply chains</h4>
-        <p>Incident actions and supply chain trust lanes, each paired with diagrams.</p>
-      </a>
-    </section>
-
-    <section id="architecture" class="container">
-      <div class="section-header">
-        <h3>Architecture</h3>
-        <p>Zero trust, SASE, and the structures that keep attackers from walking through the front door.</p>
-      </div>
-      <div class="article-grid">
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Architecture</p>
-            <h3>Zero Trust Architecture</h3>
-            <p class="article-meta">8 min • diagram: policy + data planes</p>
-            <p>Policy, control, and data plane flows explained in story form. The diagram feels like a chalkboard sketch.</p>
-            <div class="article-footer">
-              <a href="posts/zero-trust-architecture.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Architecture</p>
-            <h3>SASE Service Edge</h3>
-            <p class="article-meta">7 min • diagram: edge → cloud</p>
-            <p>SD-WAN and cloud-delivered security merge next to the user. Learn when to roll it out.</p>
-            <div class="article-footer">
-              <a href="posts/sase-service-edge.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="access" class="container">
-      <div class="section-header">
-        <h3>Access control</h3>
-        <p>Identity, MFA, passwordless, and lifecycle stages simplified.</p>
-      </div>
-      <div class="article-grid">
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Access</p>
-            <h3>MFA vs Passwordless</h3>
-            <p class="article-meta">6 min • diagram: risk → factor</p>
-            <p>Place MFA when risk surges, keep passwordless on the baseline. The diagram shows the trigger points.</p>
-            <div class="article-footer">
-              <a href="posts/mfa-passwordless.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Access</p>
-            <h3>Identity Lifecycle</h3>
-            <p class="article-meta">7 min • diagram: onboard → offboard</p>
-            <p>Document the stages from HR request to deprovisioning so no stale credentials remain.</p>
-            <div class="article-footer">
-              <a href="posts/identity-lifecycle.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="detection" class="container">
-      <div class="section-header">
-        <h3>Detection</h3>
-        <p>Endpoint layers, telemetry, monitoring automation.</p>
-      </div>
-      <div class="article-grid">
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Detection</p>
-            <h3>Endpoint Defense Layers</h3>
-            <p class="article-meta">7 min • diagram: prevention → response</p>
-            <p>Every endpoint is a mini SOC. Read how prevention, detection, and response collaborate.</p>
-            <div class="article-footer">
-              <a href="posts/endpoint-defense.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Detection</p>
-            <h3>Continuous Monitoring</h3>
-            <p class="article-meta">6 min • diagram: event → automation</p>
-            <p>Telemetry ingestion, automation, and calm dashboards. The article lays out the ingestion pipeline.</p>
-            <div class="article-footer">
-              <a href="posts/continuous-monitoring.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="response" class="container">
-      <div class="section-header">
-        <h3>Response</h3>
-        <p>Playbooks, incidents, and supply chain trust lanes.</p>
-      </div>
-      <div class="article-grid">
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Response</p>
-            <h3>Incident Response Runbook</h3>
-            <p class="article-meta">7 min • diagram: detect → recover</p>
-            <p>Script the four acts, automation hooks, and communication templates for speed.</p>
-            <div class="article-footer">
-              <a href="posts/incident-response-runbook.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="article-copy">
-            <p class="category-pill">Response</p>
-            <h3>Secure Supply Chain</h3>
-            <p class="article-meta">8 min • diagram: vendor → monitor</p>
-            <p>Map the dependencies, verify manifests, and plan the rollback before the poisoned commit lands.</p>
-            <div class="article-footer">
-              <a href="posts/secure-supply-chain.html">Read byte →</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <p>© 2025 Cyberabbit. Short for 'cybernetic rabbit surveillance'.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conduent Breach Deep Dive — Cyberabbit News</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo-stack" href="../index.html">
+          <img src="../logo.png" alt="Cyberabbit Logo" class="logo-mark" />
+          <div>
+            <p class="logo-text">Cyberabbit News</p>
+            <p class="logo-note">Conduent: 25M+ victims and counting.</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="post-hero">
+        <div class="container">
+          <div class="post-hero-content">
+            <div>
+              <p class="status-pill">BREAKING BRIEF</p>
+              <h1>Conduent’s third-party breach keeps ballooning — now more than 25 million Americans are listed.</h1>
+              <p class="post-meta">
+                Long-form look at the January 2025 ransomware intrusion, how state notifications jumped in 2026,
+                and what the attacker stole from Medicare, Medicaid, and HR systems.
+              </p>
+              <p class="post-meta">Long read • ~12 minutes</p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80"
+                alt="Stack of government forms and ransomware warnings"
+                data-prompt="Prompt: Moody government forms with circulating ransomware warning sparks"
+              />
+              <p class="image-prompt">
+                Prompt used: Moody government forms with circulating ransomware warning sparks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-body container">
+        <h2>Introduction</h2>
+        <p>
+          The Conduent breach is no longer an isolated third-party hiccup. Regulatory filings, newly released state
+          notices, and investigative reporting now list more than 25 million individuals whose Social Security numbers,
+          Medicaid/Medicare data, and HR paperwork were exposed after the October 2024 intrusion. What began as a
+          ransomware attack on a New Jersey-based back-office contractor has evolved into one of the largest healthcare
+          data disasters of 2026.
+        </p>
+
+        <h2>Timeline &amp; scope</h2>
+        <ul>
+          <li>
+            <strong>October 2024:</strong> SafePay ransomware knocks Conduent offline, impacting state benefit
+            disbursements and corporate HR systems.
+          </li>
+          <li>
+            <strong>Jan 2025:</strong> Conduent publicly discloses the incident after months of outages; public filings
+            confirm attackers stole tens of terabytes of data.
+          </li>
+          <li>
+            <strong>Feb 2026:</strong> TechCrunch traced notifications that raised Texas exposures from 4M to 15.4M and
+            confirmed Oregon’s 10.5M tally (TechCrunch, Feb 5). Multiple other states are still notifying citizens as of
+            this publication.
+          </li>
+          <li>
+            <strong>Today:</strong> Malwarebytes reports the total victims list now exceeds 25 million across at least 30
+            government and corporate programs, including SNAP, Medicaid, and major employers (Malwarebytes, Feb 2026).
+          </li>
+        </ul>
+
+        <h2>What the attackers took</h2>
+        <p>
+          The SafePay gang claims to have exfiltrated roughly 8 terabytes of data during the prolonged foothold. The
+          stolen data stretches beyond names and addresses: SafePay lists Social Security numbers, birth dates, bank
+          account details, and detailed medical claims. Because Conduent is a layered vendor — handling printing,
+          mailroom, enrollment, and payment processing for both government agencies and Fortune 100 clients — the stolen
+          datasets touch high-value programs such as the SNAP card distribution, Medicaid benefit systems, and corporate
+          HR/benefits administration for employers like Volvo.
+        </p>
+        <p>
+          Conduent’s filings confirm the attacker accessed sensitive medical claims, health insurance membership data,
+          and “a significant number of personal identifiers associated with our clients’ end-users” (SEC filing, Sept 2025).
+        </p>
+
+        <h2>Why these notifications keep rising</h2>
+        <p>
+          The rise from 10 million to 25 million victims is partly due to delayed mapping between Conduent’s clients and
+          the breached datasets. State agencies only understood which records were accessed as the forensic team matched
+          top-level files to specific benefit programs. Texas initially reported 4 million victims; updated notifications
+          now list 15.4 million, nearly half the state’s population. Oregon, Delaware, Massachusetts, New Hampshire, and
+          South Carolina continue to issue mailed notices.
+        </p>
+        <p>
+          The scale also reflects Conduent’s reach: the company says it services more than 100 million people across
+          government programs and large private payers, which means individuals who never interact with Conduent directly
+          may still have records processed on the breached platforms.
+        </p>
+
+        <h2>Response and what defenders can do</h2>
+        <ul>
+          <li>
+            <strong>State teams:</strong> Accelerate breach notification audits and provide clear guidance about affected
+            programs and contact points.
+          </li>
+          <li>
+            <strong>Healthcare entities:</strong> Inventory which outgoing feeds touch Conduent-managed print, mail, or
+            payment systems and enforce segmentation so a vendor breach cannot reach production data stores.
+          </li>
+          <li>
+            <strong>Individuals:</strong> Freeze credit with Equifax, Experian, and TransUnion, watch for suspicious
+            Medicaid/SNAP letters, and enroll in the free credit monitoring offered by impacted states.
+          </li>
+        </ul>
+        <p>
+          Conduent still insists there is no evidence of fraud, but the SafePay gang’s access to configuration files and
+          authentication tokens keeps the threat live. The incident underlines how an embedded vendor can multiply the
+          population at risk long after the initial intrusion is contained.
+        </p>
+      </section>
+
+      <section class="source-block container">
+        <h3>Sources</h3>
+        <ul class="source-list">
+          <li>
+            TechCrunch, “Data breach at govtech giant Conduent balloons, affecting millions more Americans”
+            (<a href="https://techcrunch.com/2026/02/05/data-breach-at-govtech-giant-conduent-balloons-affecting-millions-more-americans/">Link</a>)
+          </li>
+          <li>
+            Malwarebytes, “The Conduent breach; from 10 million to 25 million (and counting)”
+            (<a href="https://www.malwarebytes.com/blog/news/2026/02/the-conduent-breach-from-10-million-to-25-million-and-counting">Link</a>)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Cyberabbit News — Facts, sources, and context.</p>
+        <a href="../blog.html">Back to newsroom</a>
+      </div>
+    </footer>
+  </body>
+</html>
